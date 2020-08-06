@@ -1,6 +1,7 @@
 # Show Me Da Wae
 you do not know da wae, let me show you da wae
 
+![ShowMeDaWae Logo](https://github.com/sabm0hmayahai/showmedawae/blob/master/logo.jpg)
 # problem ShowMeDaWa solves
 In ours and other developing countries, road conditions are far from ideal for walking, riding or driving over. These conditions include potholes, open manholes, hawkers and shops creeping onto the roads, trash and waste thrown around, animals walking amongst us and in certain cases, the lack of any tar roads altogether. 
 In such a scenario, it becomes important for any routing and mapping algorithm to take into consideration these factors along with the traditional distance and traffic for deriving the best path between any two given points. 
