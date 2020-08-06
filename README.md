@@ -2,10 +2,10 @@
 you do not know da wae, let me show you da wae
 
 ![ShowMeDaWae Logo](https://github.com/sabm0hmayahai/showmedawae/blob/master/logo.jpg)
-# problem ShowMeDaWa solves
+# Problem ShowMeDaWa solves
 In ours and other developing countries, road conditions are far from ideal for walking, riding or driving over. These conditions include potholes, open manholes, hawkers and shops creeping onto the roads, trash and waste thrown around, animals walking amongst us and in certain cases, the lack of any tar roads altogether. 
 In such a scenario, it becomes important for any routing and mapping algorithm to take into consideration these factors along with the traditional distance and traffic for deriving the best path between any two given points. 
 We are creating a user sourced model of road conditions based on a user’s location and accelerometer data along with some good old feedback and report forms. These accelerometer data in the X,Y and Z coordinates are passed through a model we have previously trained with labeled data and a percentage confidence in the quality of the road is spit out. This information is saved and harnessed later in conjecture with Google Map API’s distance and time calculations to let the user choose between the shortest road which might be in a bad condition and a slightly longer road which might be in a better condition. 
 
-# challenges we faced during development
+# Challenges we faced during development
 We faced a wall of challenges in this hack. Pre-trained models for gait recognition weren't reliable enough in our testing hence we had to collect our own data walking around the hackathon venue. Once the model was ready and trained, we had to link it with the react-native app to display data on top of the Google Maps API we used. This proved to be a challenge. First we tried hosting our model on firebase's ML Kit but could not find enough documentation to deploy a custom model. Binding the model locally to the application proved to be a disaster as well with versions of installed libraries clashing with tensorflow.js. We were third time lucky when we tried hosting the app on flask with mongoDB as the backend. The android app sends API calls to the flask IP address and gets a prediction back for the sent accelerometer values. Storing and updating these values on the map was another tough challenege which we faced but mongoDB came to our rescue once again.
